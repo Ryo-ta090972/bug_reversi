@@ -84,7 +84,7 @@ module ReversiMethods
         next unless cell == BLANK_CELL
 
         position = Position.new(row, col)
-        return true if put_stone(board, position.to_cell_ref.chars, attack_stone_color, dry_run: true)
+        return true if put_stone(board, position.to_cell_ref, attack_stone_color, dry_run: true)
       end
     end
     false
